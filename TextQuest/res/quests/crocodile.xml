@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quest title="Crocodile Lair" intro="" initlevel="fy_pool_day">
+	<level 
+	id="fy_pool_day" 
+	title="Pool Day" 
+	description=""
+	initstep="awake">
+	
+		<step id="awake" 
+		title="Awakening"
+		description="You have discovered yourself on the pool side in the back-yard of big empty house.
+		You heard a strange splash in the pool">
+			<action 
+			title="Check pool" 
+			result="You see a f@*#ing giant crocodile watching you from the pool">
+				<jumptostep id="crocodile"/>
+			</action>
+			<action 
+			title="Run away" 
+			result="You discovered, that fence around the house not so high 
+			and you escaped jumping over it">
+				<victory/>
+			</action>
+		</step>
+		
+		<step id="crocodile" 
+		title="Is it real?"
+		description="You get closer to the pool still don't believe in what you see">
+			<action 
+			title="Thats just dummy! Kick it" 
+			result="It's real! - last you thought watching crocodile swimming out with your leg in mouth">
+				<death/>
+			</action>
+			<action 
+			title="Run away" 
+			result="You discovered, that fence around the house not so high 
+			and you escaped jumping over it">
+				<victory/>
+			</action>
+		</step>
+		
+		
+	</level>  
+</quest>
